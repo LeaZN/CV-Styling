@@ -1,0 +1,226 @@
+header div {
+  display:flex;
+  width: auto;
+  background-color: gray;
+ flex-direction: row;
+}
+
+
+
+body{
+ 
+  margin: 0%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+ 
+
+}
+hgroup {
+  color:rgb(252, 29, 0);
+  padding-left: 150px;
+  
+}
+
+header figure img{
+
+  background: rgb(112, 112, 112)
+ 
+
+ 
+}
+
+
+#contact{
+  position: absolute;
+  right:0px;
+  top: -70px;
+  
+}
+.contact {
+  display: flex;
+  margin:0%;
+}
+
+
+.contacts .contact-type {
+  
+  background-color:rgb(252, 29, 0);
+  color:white;
+   height: 25px;
+  width: 130px;
+  margin: 0%;
+  
+}
+
+.contacts .contact-value {
+  background-color: black;
+  color: rgb(252, 29, 0);
+  height: 25px;
+  width: 550px;
+  margin: 0%;
+  
+  
+ 
+  
+  
+}
+
+a {
+  text-decoration: none;
+  color: rgb(252, 29, 0);
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+
+
+
+
+
+
+.skill{
+  background-color: rgb(204, 204, 204);
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px;
+  line-height: 20px;
+  color: white;
+ 
+  
+  
+}
+
+
+
+.skills .skill{
+  background: rgb(204, 204, 204);
+  margin: 2px;
+  padding: 5px;
+}
+
+.skills.skills-primary .skill:first-child span{
+background-color: rgb( 252, 29, 0);
+display: inline-block;
+width: 50%;
+}
+
+.skills.skills-primary .skill:nth-child(2) span{
+  background-color: rgb( 252, 29, 0);
+  display: inline-block;
+  width: 30%;
+  }
+  
+
+  .skills.skills-primary .skill:nth-child(3) span{
+    background-color: rgb( 252, 29, 0);
+    display: inline-block;
+    width: 10%;
+    }
+    
+
+
+    .skills.skills-secondary .skill:first-child span{
+      background-color: rgb( 252, 29, 0);
+      display: inline-block;
+      width: 90%;
+      }
+      
+      .skills.skills-secondary .skill:nth-child(2) span{
+        background-color: rgb( 252, 29, 0);
+        display: inline-block;
+        width: 60%;
+        }
+        
+      
+        .skills.skills-secondary .skill:nth-child(3) span{
+          background-color: rgb(252, 29, 0);
+          display: inline-block;
+          width: 80%;
+          }
+
+
+
+          .skills.skills-secondary .skill{
+            opacity: 65%;
+          }
+
+
+
+
+.skills-primary::before{
+  content: "Main"
+
+}
+
+.skills-secondary::before{
+
+  content: "Other";
+
+
+}
+
+
+h3 {
+  margin-top:20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(194, 193, 193);
+  padding-bottom: 15px;
+  
+  
+  
+}
+p{
+  text-align: start;
+  margin-right: 20px;
+}
+
+ul {
+  list-style-type:disc;
+}
+
+
+
+.experience-type {
+  color:rgb(252, 29, 0);
+}
+
+.experience-institution::before{
+  content: "@ ";
+  color: rgb(252, 29, 0);
+}
+.experience-institution{
+  color: rgb(252, 29, 0);
+  font-weight: 400;
+  
+}
+.experience-date-separator{
+  color:rgb(252, 29, 0);
+}
+
+.experience-details{
+  color: rgb(177, 177, 177);
+}
+
+.experience-details::before{
+  content: "In ";
+}
+
+
+
+h3::before {
+content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: rgb(252, 29, 0);
+    vertical-align: middle;
+}
