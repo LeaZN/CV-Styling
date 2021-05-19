@@ -1,43 +1,93 @@
+
+
+
+
 header div {
   display:flex;
   width: auto;
+  height: auto;
   background-color: gray;
  flex-direction: row;
 }
 
 
+@media (max-width:480px) {
+
+  header div {
+    width: 400px;
+    height: 300px;
+    
+  }
+  
+}
+
 
 body{
- 
   margin: 0%;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-  
-  
- 
 
 }
+
+
+@media (max-width:480px) {
+  body{
+    max-width:400px;
+   }
+}
+
+
+@media (max-width:480px){
+
+  div:first-child{
+    max-width: 400px;
+  
+  }
+}
+
+
+
+
+
 hgroup {
   color:rgb(252, 29, 0);
   padding-left: 150px;
   
 }
 
+@media (max-width:480px) {
+
+  hgroup {
+    padding-left: 25px;
+    padding-top: 25px;
+    
+  }
+}
+
+
 header figure img{
 
   background: rgb(112, 112, 112)
- 
-
- 
 }
 
 
 #contact{
   position: absolute;
-  right:0px;
-  top: -70px;
+  right: 0px;
+  top: -70px; 
+  left: auto;
+margin-left: auto;
+margin-right: auto;
   
 }
+
+@media (max-width:480px) {
+  #contact{
+    position: initial;
+  }
+}
+
+
 .contact {
   display: flex;
   margin:0%;
@@ -58,14 +108,33 @@ header figure img{
   background-color: black;
   color: rgb(252, 29, 0);
   height: 25px;
-  width: 550px;
+  width: 30vw;
   margin: 0%;
-  
-  
- 
-  
-  
 }
+
+@media (max-width:925px) {
+hgroup {
+  padding-left: 0px;
+}
+header figure img {
+  display: none;
+}
+header div {
+  height: 132px;
+}
+}
+
+
+
+
+
+@media (max-width:480px) {
+
+  .contacts .contact-value {
+  background-color: white;  
+} 
+}
+
 
 a {
   text-decoration: none;
@@ -80,7 +149,15 @@ a {
   
 }
 
-
+@media (max-width:480px) {
+  .content{
+    grid-template-columns: 1fr;
+    margin-left:4px;
+    margin-right: 70%;
+    
+  }
+  
+}
 
 
 
@@ -92,11 +169,15 @@ a {
   padding: 5px;
   line-height: 20px;
   color: white;
- 
-  
-  
 }
 
+
+@media (max-width:480px) {
+  .skill{
+    width: 380px;
+  }
+  
+}
 
 
 .skills .skill{
@@ -173,12 +254,25 @@ h3 {
   border-bottom: 1px solid rgb(194, 193, 193);
   padding-bottom: 15px;
   
-  
-  
 }
+
+@media (max-width:480px){
+  h3 {
+    width: 400px;
+  }
+}
+
+
 p{
   text-align: start;
   margin-right: 20px;
+}
+
+@media (max-width:480px) {
+  p{
+    text-align: start;
+    margin-right: 41%;
+  }
 }
 
 ul {

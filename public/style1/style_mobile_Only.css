@@ -1,9 +1,7 @@
 header div {
-  
   width: 400px;
   height: 300px;
-  background-color: gray;
- 
+  background-color: gray; 
 }
 
 div:first-child{
