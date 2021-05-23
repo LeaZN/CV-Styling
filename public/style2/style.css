@@ -90,6 +90,7 @@ figure img {
 #competencies {
   display: grid;
   width: auto;
+  height: auto;
   grid-template-columns: 20% 30% 25% 25%;
   grid-template-rows: 50% 50%;
 
@@ -105,23 +106,26 @@ figure img {
 .skills-secondary {
   display: flex;
   align-items: center;
+  
 }
 
 .skills.skills-primary .skill {
   background: rgb(17, 124, 124);
   width: 125px;
-  line-height: 30px;
+  line-height: 1.5vw;
   margin-right: 10px;
   color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
 }
 
 .skills.skills-secondary .skill {
   background: rgb(17, 124, 124);
   width: 125px;
-  line-height: 25px;
+  line-height:1.25rem;
   margin-right: 10px;
   color: rgba(255, 255, 255, 0.85);
   font-size: x-small;
+  
 }
 
 .skills.skills-primary {
@@ -141,7 +145,7 @@ figure img {
 [data-skill="5"]:nth-child(1)::after {
   content: "★★★";
 
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 [data-skill="9"]::after {
@@ -151,22 +155,22 @@ figure img {
 
 [data-skill="7"]::after {
   content: "★★★★";
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 [data-skill="3"]::after {
   content: "★★";
-  margin-left: 50px;
+  margin-left: 90px;
 }
 
 [data-skill="1"]::after {
   content: "★";
-  margin-left: 25px;
+  margin-left: 40px;
 }
 
 [data-skill="5"]:nth-child(2)::after {
   content: "★★★";
-  margin-left: 65px;
+  margin-left: 90px;
 }
 
 .skill {
@@ -190,25 +194,28 @@ figure img {
   .skills-primary .skill {
     margin-left: 0;
     width: 27vw;
+    height: 2rem;
+    
   }
 
   [data-skill="5"]:nth-child(1)::after {
     content: "★★★";
-    margin-left: 15px;
+    margin-left: 80px;
     position: relative;
     top: 14%;
+    
   }
 
   [data-skill="3"]::after {
     content: "★★";
-    margin-left: 40px;
+    margin-left: 90px;
     position: relative;
     top: 14%;
   }
 
   [data-skill="1"]::after {
     content: "★";
-    margin-left: 10px;
+    margin-left: 100px;
     position: relative;
     top: 14%;
   }
@@ -232,26 +239,27 @@ figure img {
 
   [data-skill="9"]::after {
     content: "★★★★★";
-    margin-left: 10px;
+    margin-left: 26px;
     position: relative;
-    top: 2vw;
-    left: 3vw;
+    top: 0.5vw;
+     left: 3vw; 
+     
   }
 
   [data-skill="5"]:nth-child(2)::after {
     content: "★★★";
-    margin-left: 20px;
+    margin-left: 80px;
     position: relative;
-    top: 2vw;
-    left: 7vw;
+    top: 0.7vw;
+    left: 3vw;
   }
 
   [data-skill="7"]::after {
     content: "★★★★";
-    margin-left: 10px;
+    margin-left: 20px;
     position: relative;
     left: 1.02vw;
-    top: 2vw;
+    top: 0.7vw;
   }
 }
 
@@ -259,21 +267,26 @@ figure img {
   #experiences {
     display: block;
     margin-top: 120px;
+    height: auto;
   }
 }
 
 #experiences {
   display: grid;
-
+  height: fit-content;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 1fr 1fr;
   margin-right: 88px;
-  max-height: 450px;
+  
+  
 }
 
 .experience {
   grid-column-start: 2;
   margin-left: -15px;
+  max-height: fit-content;
+
+  
 }
 
 @media (max-width: 480px) {
@@ -306,19 +319,20 @@ figure img {
 
 #education {
   display: grid;
-
+  height: auto;
   grid-template-columns: 20% 80%;
   grid-template-rows: 50% 50%;
   margin-right: 88px;
-  max-height: 450px;
-  margin-top: 10px;
+  margin-bottom: -30px;;
+  margin-top: -400px;
 }
 
 @media (max-width: 480px) {
   #education {
     display: block;
-    margin-top: 100px;
+    margin-top: -400px;
     margin-left: -15px;
+    
   }
 }
 
@@ -328,12 +342,22 @@ figure img {
     height: auto;
   }
 }
+
+
+
+
+@media (max-width:480px) {
+  .experience-description {
+    height: auto;
+  }
+}
 #education h3 {
   border-right: 1px solid black;
-  height: 25rem;
+  height: 20rem;
   margin-right: 28px;
   text-align: center;
   margin-left: 10px;
+  
 }
 
 @media (max-width: 480px) {
@@ -355,14 +379,15 @@ figure img {
   grid-template-columns: 20% 80%;
   grid-template-rows: 50% 50%;
   margin-right: 88px;
-  margin-top: 10px;
+  margin-top: 0px;
+  
 }
 
 @media (max-width: 480px) {
   #hobbies {
     display: block;
 
-    padding-top: 0px;
+    padding-top: -200px;
     margin-left: -5px;
   }
 }
@@ -373,6 +398,7 @@ figure img {
   margin-right: 28px;
   text-align: center;
   margin-left: 10px;
+  
 }
 
 @media (max-width: 480px) {
@@ -383,8 +409,9 @@ figure img {
     height: 20px;
     display: block;
     margin-left: 0px;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: left;
+    
   }
 }
 
